@@ -39,6 +39,11 @@ public class Solution
 			
 			testCases--;
 		}
+		
+	Comparator<Student> cgpaComparator = Comparator.comparing(Student::getCgpa);
+        Comparator<Student> cgpaDescendingThenNameThenIdComparator = cgpaComparator.reversed().thenComparing(Student::getFname).thenComparing(Student::getId);
+		
+	Collections.sort(studentList, cgpaDescendingThenNameThenIdComparator);
       
       	for(Student st: studentList){
 			System.out.println(st.getFname());
