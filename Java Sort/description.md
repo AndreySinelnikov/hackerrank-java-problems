@@ -22,7 +22,8 @@ After rearranging the students according to the above rules, print the first nam
 56 Samiha 3.75
 19 Samara 3.75
 22 Fahim 3.76
-Sample Output
+
+**Sample Output**
 
 Ashis
 Fahim
